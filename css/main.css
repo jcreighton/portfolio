@@ -108,7 +108,7 @@ a {
 }
 
 h1 {
-	text-align: left;
+	text-align: center;
 }
 
 ul li {
@@ -142,10 +142,12 @@ header {
 }
 
 #logo h1 {
-	position: relative;
+	position: absolute;
 	z-index: 100;
 	margin-top: 0;
 	font-size: 1em;
+	top: 5px;
+	left: 0;
 }
 
 h1 a {
@@ -204,7 +206,7 @@ nav ul li a:hover {
 
 #about p span {
 	position: relative;
-	top: 16px;
+	top: -4px;
 	font-size: 56px;
 	padding: 5px;
 }
@@ -245,6 +247,15 @@ figcaption.more-info {
 figcaption.more-info ul li {
 	list-style: none;
 	padding: 10px 10px 0 0;
+	font-weight: bold;
+}
+
+figcaption.more-info ul li a {
+	background-color: tomato;
+	color: #fff;
+	font-weight: normal;
+	padding: 5px;
+	border-radius: 3px;
 }
 
 figure:nth-child(2n+2) figcaption.more-info {
@@ -373,8 +384,12 @@ figure:hover figcaption.more-info {
 @media only screen and (min-width: 500px) {
     /* Style adjustments for viewports that meet the condition */
 
+	h1 {
+		text-align: left;
+	}
 
 	#logo h1 {
+		position: relative;
 		font-size: 2em;
 	}
 	
@@ -396,14 +411,25 @@ figure:hover figcaption.more-info {
 	}
 
 	nav ul li a {
+		-webkit-transition: all .25s;
+		-moz-transition: all .25s;
+		-o-transition: all .25s;
+		-ms-transition: all .25s;
 		transition: all .25s;
 	}
 
 	nav ul li a:before {
 		content: '[';
+
+		-webkit-transition: all .5s;
+		-moz-transition: all .5s;
+		-o-transition: all .5s;
+		-ms-transition: all .5s;
 		transition: all .5s;
 		position: relative;
 		left: 30px;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+		filter: alpha(opacity=0);
 		opacity: 0;
 	}
 
@@ -411,21 +437,34 @@ figure:hover figcaption.more-info {
 		content: ']';
 		position: relative;
 		left: -30px;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+		filter: alpha(opacity=0);
 		opacity: 0;
+
+		-webkit-transition: all .5s;
+		-moz-transition: all .5s;
+		-o-transition: all .5s;
+		-ms-transition: all .5s;
 		transition: all .5s;
 	}
 
 	nav ul li a:hover::before {
 		left: 0px;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+		filter: alpha(opacity=100);
 		opacity: 1;
 	}
 
 	nav ul li a:hover::after {
 		left: 0px;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+		filter: alpha(opacity=100);
 		opacity: 1;
 	}
-
-
+	
+	#about p span {
+		top: 16px;
+	}
 
 }
 
@@ -477,7 +516,7 @@ figure:hover figcaption.more-info {
 		filter: alpha(opacity=100);
 		opacity: 1;
 	}
-	
+
 	div#logo:hover ul {
 		left: 17em;
 	}
@@ -489,6 +528,7 @@ figure:hover figcaption.more-info {
 		-ms-transition: all .5s;
 		transition: all .5s;
 	}
+
 }
 
 @media print,
