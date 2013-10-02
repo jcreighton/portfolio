@@ -237,7 +237,7 @@ figcaption.more-info {
 	position: absolute;
 	width: 200px;
 	height: 200px;
-	background: rgba(255, 255, 255, 0.7);
+	background: rgba(255, 255, 255, 0.8);
 	top: 0;
 	left: -200px;
 	transition: all .5s;
@@ -251,7 +251,9 @@ figcaption.more-info ul li {
 }
 
 figcaption.more-info ul li a {
-	background-color: tomato;
+	position: relative;
+	top: 30px;
+	background-color: rgb(253, 97, 69);
 	color: #fff;
 	font-weight: normal;
 	padding: 5px;
@@ -272,7 +274,24 @@ figure:hover figcaption.more-info {
 	top: 0px;
 }
 
+/**** IE Styles ****/
 
+.lt-ie9 div#logo h1 {
+	position: relative;
+	font-size: 2em;
+}
+
+.lt-ie9 div#logo ul {
+	top: 2.5em;
+	left: 3em;
+}
+
+.lt-ie9 div#logo ul li {
+	font-size: 1.7em;
+}
+
+
+/***** IE Style End *****/
 
 /* ==========================================================================
    Helper classes
