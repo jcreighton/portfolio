@@ -1,0 +1,338 @@
+body {
+	background-color: #fff;
+	font-family: 'Goudy Bookletter 1911', serif;
+}
+
+a {
+	font-family: 'Goudy Bookletter 1911', serif;
+	color: #666363;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+}
+
+#container {
+	width: 987px;
+	margin: 0 auto;
+}
+
+/*********** NAVIGATION ************/
+nav {
+	position: fixed;
+	height: 30px;
+	width: 100%;
+	z-index: 350;
+	background-color: #fff;
+	top: 0;
+}
+
+nav ul {
+	width: 587px;
+	margin: 0 auto;
+	margin-top: 6px;
+}
+
+nav ul li {
+	display: inline-block;
+	list-style: none;
+}
+
+nav ul li a {
+	margin: -10px 25px 0px 25px;
+}
+
+.is-active {
+	color: #000;
+}
+
+.active-line {
+	position: absolute;
+	width: 99px;
+	height: 2px;
+	background-color: #cf333e;
+	bottom: 4px;
+}
+
+/*********** IMAGES ************/
+#points,#map {
+	position: fixed;
+	width: 987px;
+	height: 3300px;
+	top: 0;
+	z-index: 300;
+}
+
+#map {
+	background: #fff url('/img/nyc/new_york_1880.jpg') top center no-repeat;
+	z-index: 100;
+}
+
+#pointsrel {
+	position: relative;
+	width: 100%;
+	height: 3300px;
+}
+
+figure {
+	position: relative;
+	display: table;
+	width: 1px;
+}
+
+figcaption {
+	background: rgba(0, 0, 0, .7);
+	color: #fff;
+	height: 20px;
+	padding: 5px;
+	margin-top: -6px;
+	text-align: right;
+}
+
+#inwood-img {
+	display: none;
+	top: 100px;
+	left: 305px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+#morningside-img {
+	display: none;
+	top: 1200px;
+	left: -110px;
+}
+
+#ninethave-img {
+	display: none;
+	top: 1600px;
+	left: -100px;
+}
+
+#park94th-img {
+	display: none;
+	top: 1500px;
+	left: 550px;
+}
+
+#centralnorth-img {
+	display: none;
+	top: 1354px;
+	left: 543px;
+}
+
+#centralsouth-img {
+	display: none;
+	top: 1870px;
+	left: 123px;
+}
+
+#grandcentral-img {
+	display: none;
+	top: 2100px;
+	left: 595px;
+}
+
+#madisonsq-img {
+	display: none;
+	top: 2300px;
+	left: 90px;
+}
+
+#bleecker-img {
+	display: none;
+	top: 2600px;
+	left: 667px;
+}
+
+#pell-img {
+	display: none;
+	top: 2794px;
+	left: 517px;
+}
+
+/******** PINS **********/
+.pin {
+	background-color: #cf333e;
+	height: 14px;
+	width: 14px;
+	border-radius: 7px;
+	position: absolute;
+	cursor: pointer;
+}
+
+#inwood-1914 {
+	top: 300px;
+	left: 262px;
+}
+
+#morningside-1903 {
+	top: 1356px;
+	left: 299px;
+}
+
+#nineth-ave-1886 {
+	top: 1831px;
+	left: 308px;
+}
+
+#park-94th-1882 {
+	top: 1589px;
+	left: 518px;
+}
+
+#central-north {
+	top: 1500px;
+	left: 411px;
+}
+
+#central-south {
+	top: 2000px;
+	left: 414px;
+}
+
+#grand-central-1880 {
+	top: 2257px;
+	left: 517px;
+}
+
+#madison-sq-1894 {
+	top: 2466px;
+	left: 484px;
+}
+
+#bleecker-1880 {
+	top: 2726px;
+	left: 621px;
+}
+
+#pell-1899 {
+	top: 2946px;
+	left: 481px;
+}
+
+/*#cf333e*/
+/*********** CONTENT ************/
+.content {
+	color: #000;
+	position: relative;
+	margin: 0 auto;
+	width: 987px;
+	height: 3300px;
+	z-index: 200;
+}
+
+.content article {
+	position: absolute;
+	padding-top: 50px;
+	width: 350px;
+}
+
+#intro {
+	top: 0px;
+	left: 58%;
+}
+
+#intro h1 {
+	font-size: 3em;
+	font-family: 'IM Fell DW Pica', serif;
+	margin: 10px 0 0;
+}
+
+#intro h2 {
+	position: relative;
+	font-size: 2em;
+	font-family: 'Kotta One', serif;
+	margin: 0;
+	left: 6.3em;
+	top: -0.4em;
+}
+
+#grid-proposal {
+	top: 1200px;
+	left: 50%;
+}
+
+#grid-155th {
+	top: 1800px;
+	left: 60%;
+}
+
+#grid-even {
+	top: 2100px;
+	left: 0%;
+	width: 160px;
+}
+
+#grid-northsouth {
+	top: 2400px;
+	left: 80%;
+	width: 160px;
+}
+
+#grid-eastwest {
+	top: 2600px;
+	left: 0%;
+	width: 160px;
+}
+
+#grid-madlex {
+	top: 2900px;
+	left: 76%;
+	width: 200px;
+}
+
+#grid-park-ave {
+	top: 3300px;
+	left: 77%;
+	width: 205px;
+}
+
+#grid-parks {
+	top: 3650px;
+	left: 0%;
+	width: 180px;
+}
+
+#grid-broadway {
+	top: 3950px;
+	left: 72%;
+	width: 278px;
+}
+
+#grid-plan {
+	top: 4260px;
+	width: 160px;
+}
+
+#grid-geometry {
+	top: 4580px;
+	left: 73%;
+	width: 287px;
+}
+
+#grid-disorienting {
+	top: 4980px;
+	left: 3%;
+	width: 160px;
+}
+
+#grid-value {
+	top: 5884px;
+	left: 26%;
+	width: 160px;
+	padding-bottom: 100px;
+}
+
+/*
+
+font-family:  'Kotta One', serif;
+	
+font-family:  'IM Fell DW Pica', serif;
+	
+font-family:  'Goudy Bookletter 1911', serif;
+	
+
+ */
