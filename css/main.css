@@ -241,13 +241,13 @@ figcaption.more-info {
 	background: rgba(255, 255, 255, 0.8);
 	top: 0;
 	left: -200px;
-
+	color: rgb(65, 63, 63);
+	
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
 	-o-transition: all .5s;
 	-ms-transition: all .5s;
 	transition: all .5s;
-	color: rgb(65, 63, 63);
 }
 
 figcaption.more-info ul li {
@@ -260,11 +260,18 @@ figcaption.more-info ul li {
 figcaption.more-info ul li a {
 	position: relative;
 	top: 30px;
+	left: -250px;
 	background-color: #A3C423;
 	color: #fff;
 	font-weight: normal;
 	padding: 5px;
 	width: 126px;
+	
+	transition: all .9s;
+}
+
+figcaption.more-info ul li:nth-child(2n+2) a {
+	transition: all .7s;
 }
 
 figcaption.more-info ul li a:hover {
@@ -276,8 +283,17 @@ figure:nth-child(2n+2) figcaption.more-info {
 	left: 0;
 }
 
+figure:nth-child(2n+2) figcaption.more-info a {
+	top: -250px;
+	left: 0;
+}
+
 figure:nth-child(3n+2) figcaption.more-info {
 	left: 200px;
+}
+
+figure:nth-child(3n+2) figcaption.more-info a {
+	left: 250px;
 }
 
 figure:hover figcaption.more-info {
@@ -285,20 +301,27 @@ figure:hover figcaption.more-info {
 	top: 0px;
 }
 
+figure:nth-child(2n+2):hover figcaption.more-info ul li a {
+	top: 30px;
+}
+
+figure:hover figcaption.more-info ul li a, figure:nth-child(3n+2):hover figcaption.more-info ul li a {
+	left: 0px;
+}
 
 /**** IE Styles ****/
 
-.lt-ie9 div#logo h1 {
+.lt-ie10 div#logo h1 {
 	position: relative;
 	font-size: 2em;
 }
 
-.lt-ie9 div#logo ul {
+.lt-ie10 div#logo ul {
 	top: 2.5em;
 	left: 3em;
 }
 
-.lt-ie9 div#logo ul li {
+.lt-ie10 div#logo ul li {
 	font-size: 1.7em;
 }
 

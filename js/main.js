@@ -1,12 +1,17 @@
 (function() {
 	
 	if (!Modernizr.csstransitions) {
-		$('.more-info').hover(
+		$('figure').hover(
 		function() {
-			$(this).animate({ left: 0 });
+			$('.more-info').animate({ 
+				left: 0,
+				top: 0
+			});
 		},
 		function() {
-			$(this).animate({ left: 200 });
+			$('.more-info').animate({ 
+				left: 200;
+			});
 		});
 		
 	}
