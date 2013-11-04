@@ -10,7 +10,7 @@
 		},
 		function() {
 			$('.more-info').animate({ 
-				left: 200;
+				left: 200
 			});
 		});
 		

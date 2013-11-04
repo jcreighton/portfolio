@@ -267,11 +267,19 @@ figcaption.more-info ul li a {
 	padding: 5px;
 	width: 126px;
 	
-	transition: all .9s;
+	-webkit-transition: left, top .9s;
+	-moz-transition: left, top .9s;
+	-o-transition: left, top .9s;
+	-ms-transition: left, top .9s;
+	transition: left, top .9s;
 }
 
 figcaption.more-info ul li:nth-child(2n+2) a {
-	transition: all .7s;
+	-webkit-transition: left .7s;
+	-moz-transition: left .7s;
+	-o-transition: left .7s;
+	-ms-transition: left .7s;
+	transition: left .7s;
 }
 
 figcaption.more-info ul li a:hover {
@@ -311,7 +319,7 @@ figure:hover figcaption.more-info ul li a, figure:nth-child(3n+2):hover figcapti
 
 /**** IE Styles ****/
 
-.lt-ie10 div#logo h1 {
+/*.lt-ie10 div#logo h1 {
 	position: relative;
 	font-size: 2em;
 }
@@ -323,7 +331,7 @@ figure:hover figcaption.more-info ul li a, figure:nth-child(3n+2):hover figcapti
 
 .lt-ie10 div#logo ul li {
 	font-size: 1.7em;
-}
+}*/
 
 
 /***** IE Style End *****/
@@ -543,8 +551,7 @@ figure:hover figcaption.more-info ul li a, figure:nth-child(3n+2):hover figcapti
 
 @media only screen and (min-width: 980px) {
 	
-	h1 b,h1 span {
-		display: inline-block;
+	h1 b, h1 span {
 		letter-spacing: -.64em;
 
 		-webkit-transition: all .5s;
@@ -555,6 +562,7 @@ figure:hover figcaption.more-info ul li a, figure:nth-child(3n+2):hover figcapti
 	}
 
 	h1 span {
+		display: inline;
 		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 		filter: alpha(opacity=0);
 		opacity: 0;
