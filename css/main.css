@@ -317,6 +317,13 @@ figure:hover figcaption.more-info ul li a, figure:nth-child(3n+2):hover figcapti
 	left: 0px;
 }
 
+figcaption.more-info ul li a.disabled {
+	cursor: not-allowed;
+	background-color: #B0B1AB;
+}
+
+
+
 /**** IE Styles ****/
 
 /*.lt-ie10 div#logo h1 {
